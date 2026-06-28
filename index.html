@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>修仙世界</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="app">
+
+<!-- 首页 -->
+
+<section id="home" class="page active">
+
+    <!-- 人物卡 -->
+
+    <div class="card playerCard">
+
+        <div class="playerTop">
+
+            <div>
+
+                <h2 id="playerName">无名修士</h2>
+
+                <p id="playerRealm">
+                    练气一层
+                </p>
+
+            </div>
+
+            <div class="stone">
+
+                💎
+
+                <span id="stone">
+
+                    100
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="power">
+
+            战力：
+
+            <span id="power">
+
+                100
+
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- 属性 -->
+
+    <div class="card">
+
+        <h3>❤️ 生命</h3>
+
+        <div class="bar">
+
+            <div id="hpBar" class="fill red"></div>
+
+        </div>
+
+        <span id="hpText">
+
+            100 / 100
+
+        </span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>✨ 灵力</h3>
+
+        <div class="bar">
+
+            <div id="mpBar" class="fill blue"></div>
+
+        </div>
+
+        <span id="mpText">
+
+            100 / 100
+
+        </span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>⚡ 修为</h3>
+
+        <div class="bar">
+
+            <div id="expBar" class="fill gold"></div>
+
+        </div>
+
+        <span id="expText">
+
+            0 / 100
+
+        </span>
+
+    </div>
+
+
+    <!-- 基础属性 -->
+
+    <div class="card">
+
+        <div class="grid">
+
+            <div>
+
+                攻击
+
+                <b id="atk">
+
+                    10
+
+                </b>
+
+            </div>
+
+            <div>
+
+                防御
+
+                <b id="def">
+
+                    5
+
+                </b>
+
+            </div>
+
+            <div>
+
+                身法
+
+                <b id="speed">
+
+                    10
+
+                </b>
+
+            </div>
+
+            <div>
+
+                悟性
+
+                <b id="luck">
+
+                    10
+
+                </b>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 操作 -->
+
+    <div class="card">
+
+        <button id="cultivateBtn">
+
+            开始修炼
+
+        </button>
+
+        <button id="breakBtn">
+
+            突破
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- 战斗 -->
+
+<section id="battle" class="page">
+
+<h2>⚔ 战斗</h2>
+
+<p>
+
+这里以后放地图和怪物。
+
+</p>
+
+</section>
+
+
+<!-- 背包 -->
+
+<section id="bag" class="page">
+
+<h2>🎒 背包</h2>
+
+<p>
+
+暂无物品
+
+</p>
+
+</section>
+
+
+<!-- 洞府 -->
+
+<section id="cave" class="page">
+
+<h2>🏠 洞府</h2>
+
+<p>
+
+暂无建筑
+
+</p>
+
+</section>
+
+
+<!-- 更多 -->
+
+<section id="more" class="page">
+
+<h2>☰ 更多</h2>
+
+<p>
+
+人物
+
+功法
+
+副职业
+
+排行榜
+
+设置
+
+</p>
+
+</section>
+
+</div>
+
+
+<!-- 底部菜单 -->
+
+<nav id="bottom">
+
+<button data-page="home">
+
+主页
+
+</button>
+
+<button data-page="battle">
+
+战斗
+
+</button>
+
+<button data-page="bag">
+
+背包
+
+</button>
+
+<button data-page="cave">
+
+洞府
+
+</button>
+
+<button data-page="more">
+
+更多
+
+</button>
+
+</nav>
+
+
+<script src="game.js"></script>
+
+</body>
+
+</html>
